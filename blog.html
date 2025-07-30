@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Blog - Hotel AVATARA</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            gold: '#CFA349',
+            borderGray: '#E5E5E5',
+            bgGray: '#FAFAFA',
+            textDark: '#2F2F2F',
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            serif: ['Playfair Display', 'serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- AOS & Feather -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body class="bg-white text-textDark font-sans">
+
+<!-- Header -->
+<header class="bg-bgGray shadow-md sticky top-0 z-50 py-3">
+  <div class="max-w-7xl mx-auto px-4 flex justify-between items-center">
+    <a href="index.html">
+      <img src="assets/img/logo.jpg" alt="Hotel Avatara Logo" class="h-12 w-auto object-contain" />
+    </a>
+
+    <!-- Desktop Nav -->
+    <nav class="hidden md:flex space-x-6 text-sm font-medium tracking-wide">
+      <a href="index.html" class="hover:text-gold">Home</a>
+      <a href="rooms.html" class="hover:text-gold">Rooms</a>
+      <a href="gallery.html" class="hover:text-gold">Gallery</a>
+      <a href="blog.html" class="text-gold">Blog</a>
+      <a href="about.html" class="hover:text-gold">About</a>
+      <a href="contact.html" class="hover:text-gold">Contact</a>
+    </nav>
+
+    <!-- Hamburger -->
+    <button id="mobile-menu-button" class="md:hidden text-textDark focus:outline-none">
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="hidden md:hidden px-6 pb-4 space-y-2 text-sm font-medium bg-bgGray text-textDark">
+    <a href="index.html" class="block hover:text-gold">Home</a>
+    <a href="rooms.html" class="block hover:text-gold">Rooms</a>
+    <a href="gallery.html" class="block hover:text-gold">Gallery</a>
+    <a href="blog.html" class="block text-gold">Blog</a>
+    <a href="about.html" class="block hover:text-gold">About</a>
+    <a href="contact.html" class="block hover:text-gold">Contact</a>
+  </div>
+</header>
+
+<!-- Mobile Toggle Script -->
+<script>
+  document.getElementById("mobile-menu-button").addEventListener("click", function () {
+    const menu = document.getElementById("mobile-menu");
+    menu.classList.toggle("hidden");
+  });
+</script>
+
+<!-- Blog Section -->
+<section class="bg-bgGray py-16 px-6">
+  <div class="max-w-7xl mx-auto">
+    <h2 class="text-4xl font-serif text-center mb-12">From the Blog</h2>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+      <!-- Local Attractions -->
+      <div class="bg-white rounded-xl shadow-md overflow-hidden" data-aos="fade-up">
+        <img src="assets/img/blog1.png" alt="Local Attractions" class="w-full h-48 object-cover" />
+        <div class="p-5">
+          <p class="text-xs uppercase tracking-wide text-gray-500 mb-1">Local Attractions · July 2025</p>
+          <h3 class="font-serif text-xl mb-2">Explore the Wonders of Sasan Gir</h3>
+          <p class="text-sm text-gray-700 mb-4">
+            Discover the beauty of Gir National Park and nearby cultural sites around Avatara Resort.
+          </p>
+          <a href="blog-post1.html" class="inline-block text-gold font-semibold hover:underline">Read More →</a>
+        </div>
+      </div>
+
+      <!-- Resort Updates -->
+      <div class="bg-white rounded-xl shadow-md overflow-hidden" data-aos="fade-up" data-aos-delay="100">
+        <img src="assets/img/blog2.png" alt="Resort Updates" class="w-full h-48 object-cover" />
+        <div class="p-5">
+          <p class="text-xs uppercase tracking-wide text-gray-500 mb-1">Resort Updates · July 2025</p>
+          <h3 class="font-serif text-xl mb-2">New Poolside Dining Experience</h3>
+          <p class="text-sm text-gray-700 mb-4">
+            We're excited to introduce a luxurious outdoor dining area next to our serene infinity pool.
+          </p>
+          <a href="blog-post2.html" class="inline-block text-gold font-semibold hover:underline">Read More →</a>
+        </div>
+      </div>
+
+      <!-- Travel Tips -->
+      <div class="bg-white rounded-xl shadow-md overflow-hidden" data-aos="fade-up" data-aos-delay="200">
+        <img src="assets/img/blog3.png" alt="Travel Tips" class="w-full h-48 object-cover" />
+        <div class="p-5">
+          <p class="text-xs uppercase tracking-wide text-gray-500 mb-1">Travel Tips · July 2025</p>
+          <h3 class="font-serif text-xl mb-2">Top 5 Essentials for Gir Jungle Safari</h3>
+          <p class="text-sm text-gray-700 mb-4">
+            Planning your safari adventure? Here’s a quick checklist for a smooth and exciting journey.
+          </p>
+          <a href="blog-post3.html" class="inline-block text-gold font-semibold hover:underline">Read More →</a>
+        </div>
+      </div>
+
+      <!-- Guest Stories -->
+      <div class="bg-white rounded-xl shadow-md overflow-hidden" data-aos="fade-up" data-aos-delay="300">
+        <img src="assets/img/blog4.png" alt="Guest Stories" class="w-full h-48 object-cover" />
+        <div class="p-5">
+          <p class="text-xs uppercase tracking-wide text-gray-500 mb-1">Stories · July 2025</p>
+          <h3 class="font-serif text-xl mb-2">A Magical Anniversary at Avatara</h3>
+          <p class="text-sm text-gray-700 mb-4">
+            Hear from our guests about their special moments at Avatara — from proposals to peaceful escapes.
+          </p>
+          <a href="blog-post4.html" class="inline-block text-gold font-semibold hover:underline">Read More →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-white border-t border-borderGray py-10 text-textDark">
+  <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8 text-sm">
+    <div>
+      <img src="assets/img/logo.jpg" alt="Logo" class="h-16 w-auto max-h-32" />
+      <p>Nature Retreat · Premium Hospitality</p>
+    </div>
+    <div>
+      <h4 class="font-semibold mb-2 text-gold">Contact</h4>
+      <p>📍 Avatara Resort, Borvav, Sasan Gir, Gujarat – 362150<br/>📞 +91-99744 62816<br/>✉️ info@hotelavatara.com</p>
+    </div>
+    <div>
+      <h4 class="font-semibold mb-2 text-gold">Quick Links</h4>
+      <a href="rooms.html" class="block hover:underline">Rooms</a>
+      <a href="gallery.html" class="block hover:underline">Gallery</a>
+      <a href="contact.html" class="block hover:underline">Contact</a>
+    </div>
+  </div>
+  <div class="text-center mt-8 text-xs text-gray-400">© 2025 Hotel AVATARA. All rights reserved.</div>
+</footer>
+
+<!-- Scripts -->
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>AOS.init();</script>
+<script>feather.replace();</script>
+
+</body>
+</html>

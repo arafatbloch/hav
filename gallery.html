@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gallery - Hotel AVATARA</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            gold: '#CFA349',
+            borderGray: '#E5E5E5',
+            bgGray: '#FAFAFA',
+            textDark: '#2F2F2F'
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            serif: ['Playfair Display', 'serif']
+          }
+        }
+      }
+    }
+  </script>
+  <!-- Header -->
+<header class="bg-[#FAFAFA] shadow-md sticky top-0 z-50 py-3">
+  <div class="max-w-7xl mx-auto px-4 flex justify-between items-center">
+
+    <!-- Logo -->
+    <a href="index.html" class="flex items-center">
+      <img src="assets/img/logo.jpg" alt="Hotel Avatara Logo" class="h-full max-h-[64px] w-auto object-contain" />
+    </a>
+
+    <!-- Desktop Navigation -->
+    <nav class="hidden md:flex space-x-6 text-[#2F2F2F] text-sm font-medium tracking-wide">
+      <a href="index.html" class="hover:text-gold transition">Home</a>
+      <a href="rooms.html" class="hover:text-gold transition">Rooms</a>
+      <a href="gallery.html" class="hover:text-gold transition">Gallery</a>
+      <a href="blog.html" class="hover:text-gold transition">Blog</a>
+      <a href="about.html" class="hover:text-gold transition">About</a>
+      <a href="contact.html" class="hover:text-gold transition">Contact</a>
+    </nav>
+
+    <!-- Mobile Menu Button -->
+    <button id="mobile-menu-button" class="md:hidden text-[#2F2F2F] focus:outline-none">
+      <i id="menu-icon" data-feather="menu" class="w-6 h-6"></i>
+    </button>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="md:hidden hidden bg-[#FAFAFA] px-6 pb-4 text-sm font-medium text-[#2F2F2F] space-y-2">
+    <a href="index.html" class="block hover:text-gold">Home</a>
+    <a href="rooms.html" class="block hover:text-gold">Rooms</a>
+    <a href="gallery.html" class="block hover:text-gold">Gallery</a>
+    <a href="blog.html" class="block hover:text-gold">Blog</a>
+    <a href="about.html" class="block hover:text-gold">About</a>
+    <a href="contact.html" class="block hover:text-gold">Contact</a>
+  </div>
+</header>
+
+
+  <!-- Feather Icons -->
+  <script src="https://unpkg.com/feather-icons"></script>
+
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+  <!-- GLightbox CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+</head>
+<body class="bg-white text-textDark font-sans">
+
+  <!-- Header (same as before) -->
+  <!-- ... header code omitted for brevity (use your working version) ... -->
+
+  <!-- Gallery Section -->
+  <section class="py-16 px-6 bg-bgGray">
+    <div class="max-w-7xl mx-auto">
+      <h2 class="text-4xl font-serif text-center mb-12" data-aos="fade-up">Gallery</h2>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6" data-aos="fade-up" data-aos-delay="100">
+        <!-- Image Thumbnails (clickable with GLightbox) -->
+        <a href="assets/img/gallery1.jpg" class="glightbox" data-gallery="avatara-gallery">
+          <img src="assets/img/gallery1.jpg" alt="Gallery 1" class="rounded-xl shadow-md object-cover w-full h-64">
+        </a>
+        <a href="assets/img/gallery2.jpg" class="glightbox" data-gallery="avatara-gallery">
+          <img src="assets/img/gallery2.jpg" alt="Gallery 2" class="rounded-xl shadow-md object-cover w-full h-64">
+        </a>
+        <a href="assets/img/gallery3.jpg" class="glightbox" data-gallery="avatara-gallery">
+          <img src="assets/img/gallery3.jpg" alt="Gallery 3" class="rounded-xl shadow-md object-cover w-full h-64">
+        </a>
+        <a href="assets/img/gallery4.jpg" class="glightbox" data-gallery="avatara-gallery">
+          <img src="assets/img/gallery4.jpg" alt="Gallery 4" class="rounded-xl shadow-md object-cover w-full h-64">
+        </a>
+        <a href="assets/img/gallery5.jpg" class="glightbox" data-gallery="avatara-gallery">
+          <img src="assets/img/gallery5.jpg" alt="Gallery 5" class="rounded-xl shadow-md object-cover w-full h-64">
+        </a>
+        <a href="assets/img/gallery6.jpg" class="glightbox" data-gallery="avatara-gallery">
+          <img src="assets/img/gallery6.jpg" alt="Gallery 6" class="rounded-xl shadow-md object-cover w-full h-64">
+        </a>
+      </div>
+    </div>
+  </section>
+
+ <!-- Footer -->
+<footer class="bg-white border-t border-borderGray py-10 text-textDark">
+  <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8 text-sm">
+    <div>
+      <img src="assets/img/logo.jpg" alt="Logo" class="h-16 sm:h-20 md:h-24 lg:h-28 w-auto max-h-32" />
+      <p class="mt-2">Nature Retreat · Premium Hospitality</p>
+    </div>
+    <div>
+      <h4 class="font-semibold mb-2 text-gold">Contact</h4>
+      <p>
+        📍 Avatara Resort, Borvav, Sasan Gir, Gujarat – 362150<br />
+        📞 +91-99744 62816<br />
+        ✉️ info@hotelavatara.com
+      </p>
+    </div>
+    <div>
+      <h4 class="font-semibold mb-2 text-gold">Quick Links</h4>
+      <a href="rooms.html" class="block hover:underline">Rooms</a>
+      <a href="gallery.html" class="block hover:underline">Gallery</a>
+      <a href="contact.html" class="block hover:underline">Contact</a>
+    </div>
+  </div>
+  <div class="text-center mt-8 text-xs text-gray-400">© 2025 Hotel AVATARA. All rights reserved.</div>
+</footer>
+
+  <!-- AOS -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script> AOS.init(); </script>
+
+  <!-- Feather Icons -->
+  <script> feather.replace(); </script>
+
+  <!-- GLightbox Script -->
+  <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+  <script>
+    const lightbox = GLightbox({ selector: '.glightbox' });
+  </script>
+</body>
+</html>

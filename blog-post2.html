@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>New Poolside Dining Experience - Hotel AVATARA</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            gold: '#CFA349',
+            borderGray: '#E5E5E5',
+            bgGray: '#FAFAFA',
+            textDark: '#2F2F2F',
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            serif: ['Playfair Display', 'serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- AOS & Feather -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body class="bg-white text-textDark font-sans">
+
+<!-- Header -->
+<header class="bg-[#FAFAFA] shadow-md sticky top-0 z-50 py-3">
+  <div class="max-w-7xl mx-auto px-4 flex justify-between items-center">
+    <a href="index.html">
+      <img src="assets/img/logo.jpg" alt="Hotel Avatara Logo" class="h-12 w-auto object-contain" />
+    </a>
+
+    <!-- Desktop Nav -->
+    <nav class="hidden md:flex space-x-6 text-sm font-medium">
+      <a href="index.html" class="hover:text-gold">Home</a>
+      <a href="rooms.html" class="hover:text-gold">Rooms</a>
+      <a href="gallery.html" class="hover:text-gold">Gallery</a>
+      <a href="blog.html" class="text-gold">Blog</a>
+      <a href="about.html" class="hover:text-gold">About</a>
+      <a href="contact.html" class="hover:text-gold">Contact</a>
+    </nav>
+
+    <!-- Hamburger -->
+    <button id="mobile-menu-button" class="md:hidden text-[#2F2F2F] focus:outline-none">
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
+      </svg>
+    </button>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="hidden md:hidden px-6 pb-4 space-y-2 text-sm font-medium bg-[#FAFAFA]">
+    <a href="index.html" class="block hover:text-gold">Home</a>
+    <a href="rooms.html" class="block hover:text-gold">Rooms</a>
+    <a href="gallery.html" class="block hover:text-gold">Gallery</a>
+    <a href="blog.html" class="block hover:text-gold">Blog</a>
+    <a href="about.html" class="block hover:text-gold">About</a>
+    <a href="contact.html" class="block hover:text-gold">Contact</a>
+  </div>
+</header>
+
+<script>
+  document.getElementById("mobile-menu-button").addEventListener("click", function () {
+    const menu = document.getElementById("mobile-menu");
+    menu.classList.toggle("hidden");
+  });
+</script>
+
+<!-- Blog Post Content -->
+<main class="max-w-4xl mx-auto px-6 py-16 bg-bgGray">
+  <article data-aos="fade-up">
+    <h1 class="text-4xl font-serif mb-4">New Poolside Dining Experience 🥂✨</h1>
+    <p class="text-sm text-gray-500 mb-6">Resort Updates · July 2025</p>
+
+    <img src="assets/img/blog2.png" alt="New Poolside Dining" class="w-full h-64 object-cover rounded-lg mb-6" />
+
+    <p class="mb-4">
+      Looking to add a splash of luxury to your next vacation or weekend getaway? 🌴 At <strong>Hotel Avatara</strong>, we’re thrilled to unveil our <strong>new Poolside Dining Experience</strong>, a beautifully curated culinary journey set beside the shimmering waters of our elegant pool. This is not just a meal – it's an experience that blends taste, ambiance, and relaxation for the ultimate resort indulgence. 🍽️💫
+    </p>
+
+    <p class="mb-4">
+      🌅 <strong>Dine Under the Stars, Beside the Pool:</strong>  
+      Imagine a calm evening, golden hour skies, the gentle reflection of moonlight on the pool’s surface, and a plate of gourmet cuisine in front of you. Whether you’re staying with us or visiting for a special evening, our poolside dining area is designed to deliver an unforgettable ambiance. Elegant lighting, cozy seating, and subtle music set the stage for a relaxing and romantic night.
+    </p>
+
+    <ul class="mb-4 list-disc pl-5">
+      <li>💕 Perfect for couples seeking a romantic dinner</li>
+      <li>👨‍👩‍👧‍👦 Ideal for family bonding and laughter</li>
+      <li>🎉 Great for friend groups and celebrations</li>
+      <li>🧘‍♂️ Tranquil escape for solo travelers</li>
+    </ul>
+
+    <p class="mb-4">
+      🍴 <strong>A Curated Menu with Local & Global Flavors:</strong>  
+      Our chefs have gone above and beyond to craft a menu that delights every palate. From regional favorites to globally inspired dishes, the poolside menu reflects both freshness and finesse.
+    </p>
+
+    <ul class="mb-4 list-disc pl-5">
+      <li>🐟 Grilled seafood platters</li>
+      <li>🍕 Gourmet pizzas & flatbreads</li>
+      <li>🥗 Seasonal salads and starters</li>
+      <li>🌶️ Gujarati specialties with a modern twist</li>
+      <li>🍫 Indulgent desserts like molten chocolate cake</li>
+      <li>🍹 Handcrafted fruit mocktails & beverages</li>
+    </ul>
+
+    <p class="mb-4">
+      Vegan, vegetarian, and gluten-free options are also available, ensuring everyone can enjoy the experience fully.
+    </p>
+
+    <p class="mb-4">
+      🍷 <strong>Elegant Service, Elevated Experience:</strong>  
+      What sets our poolside dining apart is the attention to every detail. From the moment you're seated, our attentive staff ensures you’re pampered with warm hospitality and impeccable service. Whether it’s a birthday surprise, a candlelight setup, or a special dietary request — we’re here to make it happen.
+    </p>
+
+    <p class="mb-4">
+      📸 <strong>Instagram-Worthy Moments Await:</strong>  
+      With beautifully plated dishes, cozy lighting, and a picturesque pool backdrop, your dinner here is sure to become a cherished memory — and a highlight on your Instagram feed! Don’t forget to tag us: <strong>@hotelavataraofficial</strong>
+    </p>
+
+    <p class="mb-4">
+      ⏰ <strong>Poolside Dining Hours:</strong><br/>
+      6:00 PM – 10:30 PM (Daily)
+    </p>
+
+    <p class="mb-4">
+      📞 <strong>Reservations:</strong> Call or WhatsApp <strong>+91 99744 62816</strong><br/>
+      ✉️ Email: <strong>info@hotelavatara.com</strong>
+    </p>
+
+    <p class="mb-4">
+      💛 <strong>Come experience the charm of Avatara in a whole new light</strong> — where dining isn’t just a meal, it’s a memory.
+    </p>
+
+    <a href="blog.html" class="inline-flex items-center bg-gold text-white px-4 py-2 rounded-md hover:bg-opacity-90 transition mb-6">
+      ← Back to Blog
+    </a>
+  </article>
+</main>
+
+
+<!-- Footer -->
+<footer class="bg-white border-t border-[#E5E5E5] py-10 text-[#2F2F2F]">
+  <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8 text-sm">
+    <div>
+      <img src="assets/img/logo.jpg" alt="Logo" class="h-16 w-auto max-h-32" />
+      <p>Nature Retreat · Premium Hospitality</p>
+    </div>
+    <div>
+      <h4 class="font-semibold mb-2 text-gold">Contact</h4>
+      <p>
+        📍 Avatara Resort, Borvav, Sasan Gir, Gujarat – 362150<br/>
+        📞 +91-99744 62816<br/>
+        ✉️ info@hotelavatara.com
+      </p>
+    </div>
+    <div>
+      <h4 class="font-semibold mb-2 text-gold">Quick Links</h4>
+      <a href="rooms.html" class="block hover:underline">Rooms</a>
+      <a href="gallery.html" class="block hover:underline">Gallery</a>
+      <a href="contact.html" class="block hover:underline">Contact</a>
+    </div>
+  </div>
+  <div class="text-center mt-8 text-xs text-gray-400">© 2025 Hotel AVATARA. All rights reserved.</div>
+</footer>
+
+<!-- Scripts -->
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script> AOS.init(); </script>
+<script> feather.replace(); </script>
+</body>
+</html>
